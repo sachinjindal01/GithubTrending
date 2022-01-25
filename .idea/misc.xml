@@ -3,7 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/dell/AndroidStudioProjects/kutumb/app/src/main/res/drawable/circle.xml" value="0.14322916666666666" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/kutumb/app/src/main/res/drawable/ic_launcher_background.xml" value="0.14322916666666666" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/kutumb/app/src/main/res/drawable/redcircle.xml" value="0.14322916666666666" />
         <entry key="..\:/Users/dell/AndroidStudioProjects/kutumb/app/src/main/res/layout/activity_main.xml" value="0.11911231884057971" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/kutumb/app/src/main/res/layout/cardview.xml" value="0.45501730103806226" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/kutumb/app/src/main/res/layout/empty_data.xml" value="0.1" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/kutumb/app/src/main/res/layout/network_error.xml" value="0.12708333333333333" />
       </map>
     </option>
   </component>
