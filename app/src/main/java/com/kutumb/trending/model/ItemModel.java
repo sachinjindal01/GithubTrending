@@ -36,7 +36,7 @@ public class ItemModel implements Serializable {
     @SerializedName("currentPeriodStars")
     @Expose
     private int currentPeriodStars;
-    @SerializedName("Owner")
+    @SerializedName("builtBy")
     @Expose
     private OwnerModel owner;
     private boolean expandable;

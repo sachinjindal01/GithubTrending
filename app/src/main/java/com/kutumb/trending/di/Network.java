@@ -15,7 +15,7 @@ public class Network {
     @Singleton
     public static TrendingApiServices providePokemonApiService() {
         return new Retrofit.Builder().baseUrl("https://api.github.com")
-                .addConverterFactory(GsonConverterFactory.create()).addCallAdapterFactory(RxJava3CallAdapterFactory)
+                .addConverterFactory(GsonConverterFactory.create()).addCallAdapterFactory(RxJava3CallAdapterFactory.create())
                 .build().create(TrendingApiServices.class);
     }
 }

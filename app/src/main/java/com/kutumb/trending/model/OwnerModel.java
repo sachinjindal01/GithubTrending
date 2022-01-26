@@ -6,7 +6,7 @@ import java.io.Serializable;
 import java.util.ArrayList;
 
 public class OwnerModel implements Serializable {
-    @SerializedName("link")
+    @SerializedName("href")
     @Expose
     private String link;
     @SerializedName("avatar")

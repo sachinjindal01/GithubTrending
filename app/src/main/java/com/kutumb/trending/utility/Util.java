@@ -15,6 +15,7 @@ import com.kutumb.trending.R;
 
 
 public class Util {
+    public static int page = 1;
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     public static boolean isNetworkAvailable(Context context) {
