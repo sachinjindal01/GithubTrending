@@ -11,7 +11,6 @@ import android.widget.TextView;
 import com.google.android.material.snackbar.Snackbar;
 import androidx.annotation.RequiresApi;
 
-import com.google.android.material.snackbar.Snackbar;
 import com.kutumb.trending.R;
 
 
