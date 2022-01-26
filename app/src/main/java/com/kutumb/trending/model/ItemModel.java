@@ -38,9 +38,10 @@ public class ItemModel implements Serializable {
     private int currentPeriodStars;
     @SerializedName("Owner")
     @Expose
-    private ArrayList<OwnerModel> owner;
+    private OwnerModel owner;
+    private boolean expandable;
 
-    public ItemModel(String author, String name, String avatar, String url, String description, String language, String languageColor, int stars, int forks, int currentPeriodStars, ArrayList<OwnerModel> owner) {
+    public ItemModel(String author, String name, String avatar, String url, String description, String language, String languageColor, int stars, int forks, int currentPeriodStars, OwnerModel owner) {
         this.author = author;
         this.name = name;
         this.avatar = avatar;
@@ -134,11 +135,19 @@ public class ItemModel implements Serializable {
         this.currentPeriodStars = currentPeriodStars;
     }
 
-    public ArrayList<OwnerModel> getOwner() {
+    public OwnerModel getOwner() {
         return owner;
     }
 
-    public void setOwner(ArrayList<OwnerModel> owner) {
+    public void setOwner(OwnerModel owner) {
         this.owner = owner;
+    }
+
+    public boolean isExpandable() {
+        return expandable;
+    }
+
+    public void setExpandable(boolean expand) {
+        expandable = expand;
     }
 }

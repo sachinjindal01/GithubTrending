@@ -3,6 +3,7 @@ package com.kutumb.trending.model;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 import java.io.Serializable;
+import java.util.ArrayList;
 
 public class OwnerModel implements Serializable {
     @SerializedName("link")
@@ -19,6 +20,11 @@ public class OwnerModel implements Serializable {
         this.link = link;
         this.avatar = avatar;
         this.username = username;
+    }
+    public OwnerModel(OwnerModel model) {
+        this.link = model.getLink();
+        this.avatar = model.getAvatar();
+        this.username = model.getUsername();
     }
 
     public String getLink() {

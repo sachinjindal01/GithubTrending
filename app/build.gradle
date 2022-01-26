@@ -59,6 +59,7 @@ dependencies {
     implementation "com.github.akarnokd:rxjava3-retrofit-adapter:3.0.0"
     implementation 'androidx.lifecycle:lifecycle-viewmodel:2.4.0'
     implementation 'androidx.lifecycle:lifecycle-livedata:2.4.0'
+    implementation 'com.squareup.picasso:picasso:2.71828'
 
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'

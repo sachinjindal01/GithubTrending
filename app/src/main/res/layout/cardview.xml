@@ -2,7 +2,6 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
-    <data class="FilterItemBinding" />
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -28,7 +27,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="10dp"
-                android:textSize="10sp"
+                android:textSize="12sp"
                 app:layout_constraintStart_toEndOf="@+id/profile"
                 app:layout_constraintTop_toTopOf="parent"
                 tools:text="repo author name" />
@@ -59,7 +58,7 @@
                     android:id="@+id/description"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="50dp"
+                    android:layout_marginStart="50dp"
                     android:textSize="15sp"
                     tools:text="This is the description about github repositoriy." />
 
@@ -70,11 +69,10 @@
                     android:layout_below="@+id/description"
                     android:layout_alignStart="@+id/description"
                     android:layout_marginStart="0dp"
-                    android:layout_marginLeft="70dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="10dp"
                     android:layout_marginBottom="10dp"
-                    android:drawableLeft="@drawable/redcircle"
+                    app:drawableStart="@drawable/redcircle"
                     android:drawablePadding="5dp"
                     tools:text="C++" />
 
@@ -84,11 +82,11 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_below="@id/description"
-                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="15dp"
-                    android:layout_toRightOf="@id/language"
-                    android:drawableLeft="@drawable/ic_star"
+                    android:layout_toEndOf="@id/language"
+                    app:drawableLeftCompat="@drawable/ic_star"
                     android:drawablePadding="5dp"
                     tools:text="stars rating" />
 
@@ -99,7 +97,7 @@
                     android:layout_below="@id/description"
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="8dp"
-                    android:layout_toRightOf="@id/star"
+                    android:layout_toEndOf="@id/star"
                     android:drawablePadding="4dp"
                     tools:text="forks 100" />
 
