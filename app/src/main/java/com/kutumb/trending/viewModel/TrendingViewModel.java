@@ -32,6 +32,8 @@ public class TrendingViewModel extends ViewModel {
         this.repository = repository;
     }
 
+    public TrendingViewModel() { }
+
     public MutableLiveData<List<ItemModel>> getTrendingList() {
         return reposList;
     }
@@ -43,6 +45,7 @@ public class TrendingViewModel extends ViewModel {
 
     public void loadTrendingList(String date){
         initMap();
+        if(repository == null) return;
         if( date != null && !date.isEmpty()) map.put("q","created:>"+date);
         disposable.add(repository.getTrending(map)
                 .subscribeOn(Schedulers.io())

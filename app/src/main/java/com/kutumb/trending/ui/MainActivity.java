@@ -43,9 +43,12 @@ public class MainActivity extends AppCompatActivity implements SwipeRefreshLayou
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setSupportActionBar(binding.toolbar);
         binding.toolbarTitle.setText(binding.toolbar.getTitle());
+       getSupportActionBar().setDisplayShowTitleEnabled(false);
 
-        initView();
-        setUpRecyclerView();
+       viewModel = new ViewModelProvider(this).get(TrendingViewModel.class);
+
+       initView();
+       setUpRecyclerView();
 
    }
 
