@@ -10,12 +10,26 @@ import android.view.View;
 import android.widget.TextView;
 import com.google.android.material.snackbar.Snackbar;
 import androidx.annotation.RequiresApi;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 
 import com.kutumb.trending.R;
 
 
 public class Util {
     public static int page = 1;
+    private static DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
+
+    public static String getFormattedDateOneMonthAgo(){
+
+        Calendar calendar = Calendar.getInstance();
+        calendar.add(Calendar.MONTH, -1);
+        Date currentDate = calendar.getTime();
+
+        return dateFormat.format(currentDate);
+    }
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     public static boolean isNetworkAvailable(Context context) {

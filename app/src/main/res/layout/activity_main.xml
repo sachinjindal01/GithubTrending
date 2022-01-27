@@ -8,11 +8,11 @@
 
     </data>
 
-    <LinearLayout
-
-        android:layout_height="match_parent"
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/main_layout"
         android:layout_width="match_parent"
-        android:orientation="vertical">
+        android:layout_height="match_parent"
+        tools:context=".ui.MainActivity">
 
         <com.google.android.material.appbar.AppBarLayout
             android:id="@+id/appBar"
@@ -93,5 +93,5 @@
                 app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
         </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
-    </LinearLayout>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </layout>

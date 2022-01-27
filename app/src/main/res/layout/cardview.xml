@@ -72,7 +72,7 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="10dp"
                     android:layout_marginBottom="10dp"
-                    app:drawableStart="@drawable/redcircle"
+                    android:drawableLeft="@drawable/redcircle"
                     android:drawablePadding="5dp"
                     tools:text="C++" />
 
